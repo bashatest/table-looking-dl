@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* 共通
+-------------------------------------------------- */
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+.tbl-common01 {  
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #666666;
+    border-bottom: none;
+}
+
+.tbl-common01 dt {  
+    font-weight: bold;
+}
+
+
+/* スマホ
+-------------------------------------------------- */
+@media only screen and (max-width:570px) {
+    .tbl-common01 {
+        background-color: #EEEEEE;
+    }
+    
+    .tbl-common01 dt,
+    .tbl-common01 dd {
+        padding: 8px 20px;
+    }
+    
+    .tbl-common01 dt {
+        float: none;
+        background-color: #AAAAAA; 
+        border-top:1px solid #FFFFFF;
+        border-left: 1px solid #FFFFFF;
+    }
+    
+    .tbl-common01 dd {
+        border-top: 1px solid #666666;
+        border-bottom: 1px solid #666666;
+    }
+}
+
+
+/* PC
+-------------------------------------------------- */
+@media only screen and (min-width: 571px) {
+    .tbl-common01 {
+        background: #EEEEEE url(../img/bg.png) repeat-y -150px 0;
+    }
+    
+    .tbl-common01 dt,
+    .tbl-common01 dd {
+        padding: 20px;
+    }
+    
+    .tbl-common01 dt {
+        clear: both;
+        float: left;
+        width: 110px;
+        border-top: 1px solid #FFFFFF;
+    }
+    
+    .tbl-common01 dd {
+        padding-left: 170px;
+        border-top: 1px solid #FFFFFF;
+        border-bottom: 1px solid #666666;
+        border-left: 1px solid #FFFFFF;
+    }
+}
